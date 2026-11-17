@@ -1,0 +1,17 @@
+{
+  "experiments_requested": 1000,
+  "experiments_valid": 1000,
+  "random_baselines_per_experiment": 10,
+  "optimized_wins": 1000,
+  "ties": 0,
+  "losses": 0,
+  "optimized_win_rate_pct": 100.0,
+  "average_random_score": 3.003808571428572,
+  "average_optimized_score": 4.753571428571428,
+  "average_score_gain": 1.749762857142857,
+  "minimum_score_gain": 1.487142857142857,
+  "maximum_score_gain": 2.0142857142857147,
+  "average_first_choice_gain_pct": 57.76871428571428,
+  "average_top2_gain_pct": 57.307857142857145,
+  "average_regret_reduction": 1.7497628571428572
+}

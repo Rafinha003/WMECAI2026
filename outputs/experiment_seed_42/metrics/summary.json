@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "participants": 70,
+  "teams": {
+    "PLATAFORMA": 50,
+    "PD": 20
+  },
+  "restrictions": 4,
+  "solver_status": "Optimal",
+  "objective_value": 331.0,
+  "all_constraints_valid": true,
+  "random": {
+    "participants": 70,
+    "average_score": 3.1285714285714286,
+    "average_rank": 2.8714285714285714,
+    "average_regret": 1.8714285714285714,
+    "first_choice_count": 17,
+    "first_choice_pct": 24.285714285714285,
+    "top2_count": 26,
+    "top2_pct": 37.142857142857146,
+    "top3_count": 46,
+    "top3_pct": 65.71428571428571,
+    "low_preference_count": 24,
+    "low_preference_pct": 34.285714285714285,
+    "worst_choice_count": 10,
+    "worst_choice_pct": 14.285714285714286
+  },
+  "optimized": {
+    "participants": 70,
+    "average_score": 4.728571428571429,
+    "average_rank": 1.2714285714285714,
+    "average_regret": 0.2714285714285714,
+    "first_choice_count": 53,
+    "first_choice_pct": 75.71428571428571,
+    "top2_count": 68,
+    "top2_pct": 97.14285714285714,
+    "top3_count": 70,
+    "top3_pct": 100.0,
+    "low_preference_count": 0,
+    "low_preference_pct": 0.0,
+    "worst_choice_count": 0,
+    "worst_choice_pct": 0.0
+  },
+  "gain": {
+    "average_score_absolute": 1.6,
+    "average_score_relative_pct": 51.141552511415526
+  }
+}

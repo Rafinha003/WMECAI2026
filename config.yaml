@@ -1,0 +1,115 @@
+# ============================================================
+# HOME OFFICE OPTIMIZATION
+# Configuração principal do experimento
+# ============================================================
+
+project:
+  name: "Home Office Optimization - BemAgro"
+
+# ------------------------------------------------------------
+# População simulada
+# ------------------------------------------------------------
+
+simulation:
+  total_employees: 70
+
+  teams:
+    PD: 20
+    PLATAFORMA: 50
+
+  # Seed utilizada na simulação individual.
+  seed: 42
+
+  # Aproximadamente 5% dos participantes terão
+  # uma restrição real simulada.
+  restriction_rate: 0.05
+
+# ------------------------------------------------------------
+# Tendência das preferências
+# ------------------------------------------------------------
+#
+# Estes pesos são utilizados na geração do ranking.
+#
+# Não significam que exatamente 30% escolherão segunda
+# ou exatamente 35% escolherão sexta.
+#
+# Eles apenas tornam segunda e sexta mais prováveis
+# de aparecer nas primeiras posições.
+# ------------------------------------------------------------
+
+preferences:
+  day_weights:
+    segunda: 0.30
+    terca: 0.10
+    quarta: 0.10
+    quinta: 0.15
+    sexta: 0.35
+
+# ------------------------------------------------------------
+# Limites gerais de home office
+# ------------------------------------------------------------
+#
+# Com 70 participantes:
+#
+#     70 / 5 = 14
+#
+# Uma distribuição perfeitamente uniforme teria
+# 14 pessoas em home office por dia.
+#
+# Nesta primeira simulação permitimos pequena flexibilidade:
+#
+#     mínimo = 12
+#     máximo = 16
+# ------------------------------------------------------------
+
+home_office:
+  min_per_day: 12
+  max_per_day: 16
+
+# ------------------------------------------------------------
+# Limites por equipe
+# ------------------------------------------------------------
+#
+# P&D:
+#     20 / 5 = 4 pessoas/dia como referência.
+#
+# Plataforma:
+#     50 / 5 = 10 pessoas/dia como referência.
+#
+# Permitimos uma pequena margem para o solver conseguir
+# explorar melhores combinações.
+# ------------------------------------------------------------
+
+team_limits:
+  PD:
+    min_per_day: 3
+    max_per_day: 5
+
+  PLATAFORMA:
+    min_per_day: 9
+    max_per_day: 11
+
+# ------------------------------------------------------------
+# Experimento de Monte Carlo
+# ------------------------------------------------------------
+
+experiments:
+
+  # Quantidade de populações sintéticas diferentes.
+  number_of_experiments: 1000
+
+  # O sorteio possui variabilidade.
+  # Para cada população, executamos vários sorteios
+  # independentes e usamos a média como baseline.
+  random_baselines_per_experiment: 10
+
+  # Seed base.
+  base_seed: 1000
+
+# ------------------------------------------------------------
+# Diretórios
+# ------------------------------------------------------------
+
+paths:
+  simulated_data: "data/simulated"
+  outputs: "outputs"

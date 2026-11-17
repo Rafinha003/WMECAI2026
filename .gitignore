@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+.venv/
+venv/
+env/
+
+.idea/
+.vscode/
+
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Dados intermediarios gerados pelos experimentos de Monte Carlo
+outputs/monte_carlo/simulated_data/

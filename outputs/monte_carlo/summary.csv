@@ -1,0 +1,2 @@
+experiments_requested,experiments_valid,random_baselines_per_experiment,optimized_wins,ties,losses,optimized_win_rate_pct,average_random_score,average_optimized_score,average_score_gain,minimum_score_gain,maximum_score_gain,average_first_choice_gain_pct,average_top2_gain_pct,average_regret_reduction
+1000,1000,10,1000,0,0,100.0,3.003808571428572,4.753571428571428,1.749762857142857,1.487142857142857,2.0142857142857147,57.76871428571428,57.307857142857145,1.7497628571428572

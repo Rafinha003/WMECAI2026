@@ -1,0 +1,19 @@
+scope,constraint,item,actual,expected,passed
+global,all_participants_assigned,todos,70,70,True
+global,one_day_per_participant,todos,0,0,True
+global,individual_restrictions,todos,0,0,True
+day,home_office_limit,segunda,16,12 <= x <= 16,True
+day,home_office_limit,terca,12,12 <= x <= 16,True
+day,home_office_limit,quarta,12,12 <= x <= 16,True
+day,home_office_limit,quinta,14,12 <= x <= 16,True
+day,home_office_limit,sexta,16,12 <= x <= 16,True
+team_day,team_home_office_limit,PD:segunda,5,3 <= x <= 5,True
+team_day,team_home_office_limit,PD:terca,3,3 <= x <= 5,True
+team_day,team_home_office_limit,PD:quarta,3,3 <= x <= 5,True
+team_day,team_home_office_limit,PD:quinta,4,3 <= x <= 5,True
+team_day,team_home_office_limit,PD:sexta,5,3 <= x <= 5,True
+team_day,team_home_office_limit,PLATAFORMA:segunda,11,9 <= x <= 11,True
+team_day,team_home_office_limit,PLATAFORMA:terca,9,9 <= x <= 11,True
+team_day,team_home_office_limit,PLATAFORMA:quarta,9,9 <= x <= 11,True
+team_day,team_home_office_limit,PLATAFORMA:quinta,10,9 <= x <= 11,True
+team_day,team_home_office_limit,PLATAFORMA:sexta,11,9 <= x <= 11,True
